@@ -1,0 +1,1474 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*selectors common across site*/
+
+body {
+  font-family: 'oswald', 'sans-serif';
+  margin: 0;
+  padding: 0;
+}
+
+.contact .bottom-container,
+#homepagebody .bottom-container {
+  position: fixed;
+}
+
+@media (max-width: 900px) {
+
+  .bottom-container,
+  .nav-menu--wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1rem !important;
+  }
+}
+
+  @media (max-width: 640px) {
+
+    .bottom-container,
+    .nav-menu--wrap {
+      font-size: .7rem !important;
+    }
+    
+}
+
+/*nav bars*/
+
+.dropdown--ul {
+  background-color: #000;
+  display: none;
+  left: 0;
+  list-style-type: none;
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+}
+
+.dropdown--ul-li {
+  margin: 1rem;
+}
+
+#nav {
+  background-color: #000;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: red;
+}
+
+.nav-menu--label {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 1rem;
+}
+
+.nav-menu--ul {
+  display: flex;
+  height: 60px;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.nav-menu--ul-li {
+  background-color: #000;
+  flex: 1;
+  position: relative;
+}
+
+.nav-menu--ul-li:hover .dropdown--ul {
+  display: block;
+}
+
+.nav-menu--wrap {
+  color: #fff;
+  font-size: 1.25rem;
+  height: 60px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav-menu--wrap a {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+
+  #nav {
+    padding-top: .75rem;
+  }
+
+  .nav-menu--label {
+    padding: .5rem;
+  }
+}
+
+/*footers*/
+
+.bottom-container {
+  align-items: center;
+  background-color: black;
+  bottom: 0px;
+  display: flex;
+  height: 3rem;
+  justify-content: space-evenly;
+  padding: .6rem;
+  width: 100%;
+}
+
+.bottom-container a:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em gold;
+  color: red;
+  cursor: pointer;
+}
+
+.copyright {
+  pointer-events: none;
+}
+
+.copyright,
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+/*homepage*/
+
+.homepage {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#homepagebody {
+  background: center/cover url(../images/projector.jpg);
+  background-color: black;
+  background-image: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.homepage h1 {
+  float: left;
+  font-size: 6rem;
+  margin: 5rem 0 5rem 4rem;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.homepage:hover {
+  opacity: 1;
+}
+
+.homepage p {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 14rem 8rem 0 0;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+@media (max-width: 1080px) {
+
+  .homepage {
+    opacity: 1;
+  }
+
+  .homepage h1 {
+    float: none;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .homepage p {
+    margin: 2rem 2rem 6rem 4rem;
+    max-width: 70%;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .homepage h1 {
+    font-size: 2.5rem !important;
+    padding-top: 3rem;
+ }
+
+  .homepage p {
+    font-size: 1.25rem !important;
+    margin: 2rem 2rem 1rem 4rem !important;
+  }
+}
+
+/*TOP 10 MOVIES */
+
+.blade,
+.braz,
+.die,
+.heather,
+.robo,
+.wa {
+  float: left;
+  margin-left: 7rem !important;
+}
+
+.bladerunner {
+  background: center/cover url("../images/top10movies/bladerunner/br4.jpg");
+}
+
+.blue,
+.ed,
+.nb,
+.rais,
+.some,
+.true {
+  float: right;
+  margin-right: 7rem !important;
+}
+
+.bluevelvet {
+  background: center/cover url("../images/top10movies/bluevelvet/bv4.jpg")
+}
+
+
+.brazil {
+  background: center/cover url("../images/top10movies/brazil/brazil2.jpg");
+}
+
+.diehard {
+  background: center/cover url("../images/top10movies/diehard/die4.jpg");
+}
+
+.edward {
+  background: center/cover url("../images/top10movies/edward/edward2.jpg")
+}
+
+.heathers {
+  background: center/cover url("../images/top10movies/heathers/heathers2.jpg");
+}
+
+.nbk {
+  background: center/cover url("../images/top10movies/nbk/nbk1.jpg");
+}
+
+.raising {
+  background: center/cover url("../images/top10movies/raising/raising3.jpg")
+}
+
+.robocop {
+  background: center/cover url("../images/top10movies/robocop/robo3.jpg");
+}
+
+.somethingwild {
+  background: center/cover url("../images/top10movies/something/something3.jpg")
+}
+
+.top10darkenbackground {
+  background: rgba(0, 0, 0, .5);
+}
+
+.top10firstheadline {
+  bottom: -11rem;
+  font-size: 7rem;
+  left: 25rem;
+  position: relative;
+}
+
+.top10headline-section {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.top10headline-section h1 {
+  color: white;
+  position: absolute;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+  transform: rotate(10deg);
+}
+
+.top10headline-section img {
+  border: 7px solid black;
+  width: 30%;
+}
+
+.top10list {
+  display: flex;
+  flex-direction: column;
+}
+
+.top10list div {
+  box-shadow: 0px 0px 15px 0px black inset;
+}
+
+.top10list h2 {
+  color: white;
+  font-size: 4rem;
+  margin: 0rem 4rem 4rem 4rem;
+  padding-top: 4rem;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.top10list img {
+  border: 5px solid black;
+  margin: .5rem 2rem 0 2rem;
+  width: 40%;
+}
+
+.top10list p {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: auto;
+  max-width: 90%;
+  padding: 0rem 4rem 5rem 4rem;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.top10moviesbody {
+  font-family: "kanit";
+}
+
+.top10pleft {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+.top10pright {
+  margin-right: 3rem !important;
+  margin-left: 3.5rem !important;
+}
+
+.top10secondheadline {
+  bottom: -6rem;
+  font-size: 10rem;
+  left: -3rem;
+  position: relative;
+}
+
+.top10thirdheadline {
+  bottom: -1.5rem;
+  font-size: 7rem;
+  left: -1rem;
+  position: relative;
+}
+
+.trueromance {
+  background: center/cover url("../images/top10movies/trueromance/tr3.jpg");
+}
+
+.wah {
+  background: center/cover url("../images/top10movies/wah/wah5.jpg")
+}
+
+@media (max-width: 1050px) {
+
+  .top10firstheadline {
+    bottom: -7rem;
+    font-size: 5rem;
+    left: 18rem;
+    position: relative;
+  }
+
+  .top10list h2 {
+    font-size: 3rem;
+  }
+
+  .top10list img {
+    width: 50%;
+  }
+
+  .top10list p {
+    font-size: 2rem;
+  }
+
+  .top10secondheadline {
+    bottom: -4rem;
+    font-size: 7rem;
+    left: -3rem;
+    position: relative;
+  }
+
+  .top10thirdheadline {
+    bottom: -2rem;
+    font-size: 5rem;
+    left: 3rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 875px) {
+
+  .top10firstheadline {
+    bottom: -6.5rem;
+    font-size: 2.5rem;
+    left: 16rem;
+    position: relative;
+  }
+
+  .top10list h2 {
+    font-size: 2rem;
+  }
+
+  .top10list img {
+    display: block;
+    float: none;
+    margin-bottom: 3rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80%;
+  }
+
+  .top10list p {
+    max-width: 90%;
+    font-size: 1.5rem;
+    padding: 0 0 4rem 0;
+  }
+
+  .top10secondheadline {
+    bottom: -4rem;
+    font-size: 4.5rem;
+    left: 1rem;
+    position: relative;
+  }
+
+  .top10thirdheadline {
+    bottom: -2rem;
+    font-size: 3rem;
+    left: 2.5rem;
+    position: relative;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .top10firstheadline {
+    bottom: -5rem;
+    font-size: 1.5rem;
+    left: 13rem;
+  }
+
+  .top10list h2 {
+    font-size: 1.5rem;
+  }
+
+  .top10list p {
+    font-size: 1rem;
+  }
+
+  .top10secondheadline {
+    font-size: 3rem;
+  }
+
+  .top10thirdheadline {
+    bottom: -3rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+/*Blade Runner Page*/
+
+.brarticle {
+  margin: auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.brarticle h2 {
+  border-top: 1px solid #fff;
+  font-size: 3rem;
+  line-height: 1.25;
+  margin: 3rem 0;
+  padding-top: 1rem;
+}
+
+.brarticle h2,
+.brheadline {
+  color: red;
+}
+
+.brarticle h2:first-child {
+  border-top: 0;
+}
+
+.brarticle img {
+  border: 5px solid white;
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+.brarticle p {
+  color: white;
+  font-family: "roboto";
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.brarticle p:last-child {
+  padding-bottom: 3rem;
+}
+
+.brdarkenbackground {
+  background: rgba(0, 0, 0, .2)
+}
+
+.brheadline {
+  font-size: 5rem;
+  line-height: 1.25;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.brheadline-large {
+  font-size: 10rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.brheadline-section {
+  margin: 12rem 0 10rem 0;
+  padding: 0;
+}
+
+#brpage {
+  background: center/cover url(../images/bladerunner/bladerunnereye.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  displaY: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1050px) {
+
+  .brarticle {
+    padding: 0 1.25rem;
+    width: calc(100% - 6rem);
+  }
+
+  .brarticle h2 {
+    font-size: 2.5rem;
+  }
+
+  .brarticle img {
+    margin: auto !important;
+  }
+
+  .brheadline {
+    font-size: 4rem;
+    line-height: 1.25;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .brheadline-large {
+    font-size: 7rem;
+  }
+
+  .brheadline-section {
+    padding: 0 1.25rem;
+    text-align: center;
+    width: calc(100% - 2.5rem);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .brarticle h2 {
+    font-size: 1.5rem;
+  }
+
+  .brarticle p {
+    font-size: 1rem;
+  }
+
+  .brheadline {
+    font-size: 2.5rem;
+  }
+
+  .brheadline-large {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+}
+
+/*TOP20DIRECTORS*/
+
+#directors {
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  margin: 0 5rem 5rem 5rem;
+}
+
+.directorsheropage h1 {
+  font-size: 6rem;
+  margin: auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.directorsheropage img {
+  display: block;
+  margin: auto;
+  max-width: 70%;
+  padding-bottom: 5rem;
+}
+
+.directorsheropage p {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+}
+
+#directors td,
+#directors th {
+  border: 2px solid black;
+  padding: 8px;
+}
+
+#directors th {
+  background-color: rgb(87, 86, 86);
+  color: white;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: left;
+}
+
+#directors tr:hover {
+  background-color: white !important;
+}
+
+#directors tr:nth-child(even) {
+  background-color: rgb(196, 196, 202);
+}
+
+#directors tr:nth-child(odd) {
+  background-color: #ddd
+}
+
+@media (max-width: 1007px) {
+
+  #directors {
+    font-size: .9rem;
+    margin: auto;
+    width: 80%;
+  }
+
+  .directorsheropage h1 {
+    font-size: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+  }
+
+  .directorsheropage p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #directors {
+    font-size: .5rem;
+  }
+
+  .directorsheropage h1 {
+    font-size: 2rem;
+    text-align: center !important;
+  }
+
+  .directorsheropage p {
+    font-size: 1rem;
+  }
+
+}
+
+/*David Lynch Section*/
+
+.lynchbody {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.lynchbody hr {
+  border: dotted grey;
+  border-bottom: none;
+  margin: 4rem auto;
+  width: 5%;
+}
+
+.lynchcheckboxsize {
+  height: 30px;
+  width: 40px;
+}
+
+.lynchcolorheight {
+  height: 40px;
+  width: 90px;
+}
+
+.lynchdropdownselector {
+  height: 30px;
+  width: 150px;
+}
+
+.lynchdropdownselector:hover {
+  background-color: grey;
+  color: white;
+}
+
+.lynchheroimage {
+  background: center/cover url(../images/davidlynch/eraserhead.jpg);
+}
+
+.lynchheroimage h1 {
+  font-size: 6rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.lynchheroimage h1,
+.lynchsearch h3,
+.lynchsearchheadline {
+  color: white;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.lynchheroimage p {
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  margin: 27rem auto 6rem auto;
+  text-align: center;
+}
+
+.lynchinfoheight {
+  height: 30px;
+}
+
+.lynchmainbody {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.lynchmeasuresize {
+  width: 300px;
+}
+
+.lynchnumbersize {
+  height: 20px;
+  width: 45px;
+}
+
+.lynchsearch {
+  background: center/cover url(../images/davidlynch/lynch3.jpg);
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.lynchsearchbutton {
+  background-color: #95b7ff;
+  border-radius: 25%;
+  color: white;
+  font-size: 1.25rem;
+  height: 50px;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+  width: 120px;
+}
+
+.lynchsearchbutton:hover {
+  background-color: grey;
+  color: black;
+  text-shadow: none;
+}
+
+.lynchsearch h3 {
+  font-size: 2rem;
+}
+
+.lynchsearchheadline {
+  font-size: 3rem;
+}
+
+.lynchsearchheight {
+  height: 20px;
+}
+
+.lynchsubmit {
+  background-color: #95b7ff;
+  border-radius: 25%;
+  color: white;
+  font-size: 1.5rem;
+  height: 40px;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+  width: 120px;
+}
+
+.lynchsubmit:hover {
+  background-color: grey;
+  color: black;
+  text-shadow: none;
+}
+
+@media (max-width: 1040px) {
+
+  .lynchheroimage h1,
+  .lynchheroimage p,
+  .lynchsearch h2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .lynchheroimage h1 {
+    font-size: 4.5rem;
+  }
+
+  .lynchsearch h3 {
+    font-size: 1.5rem;
+  }
+
+  .lynchsearchheadline {
+    font-size: 2.5rem;
+  }
+
+}
+
+/*Top 20 Actors Page*/
+
+.actorsbigheadline {
+  font-size: 8rem;
+  font-style: bold;
+}
+
+.actorsherosection {
+  background: center/cover url("../images/top20actors/actormask.jpg");
+}
+
+.actorsherosection h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.actorsherosection p {
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0 auto 8rem auto;
+  max-width: 70%;
+  text-align: center;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+}
+
+.actorslist .actor {
+  font-size: 3rem;
+  margin: 5rem auto 5rem auto;
+}
+
+.actorslist li {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 1.5rem 3rem;
+}
+
+.actorslist ol {
+  margin: 0 auto 8rem auto;
+  max-width: 25%;
+  text-align: center;
+}
+
+.actorslist ul {
+  margin-top: 3rem;
+}
+
+.actorspage {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1007px) {
+
+  .actorsbigheadline {
+    font-size: 6rem;
+  }
+
+  .actorsherosection h1 {
+    font-size: 4rem;
+    margin-top: 10rem !important;
+  }
+
+  .actorsherosection p {
+    font-size: 2rem;
+  }
+
+  .actorslist ol {
+    max-width: 50%;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .actorsbigheadline {
+    font-size: 4.5rem;
+  }
+
+  .actorsherosection h1 {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
+
+  .actorsherosection p {
+    font-size: 1.5rem;
+  }
+
+  .actorslist .actor {
+    font-size: 1.5rem;
+  }
+
+  .actorslist li {
+    font-size: 1rem;
+  }
+
+    .actorslist ol {
+    max-width: 80%;
+  }
+
+}
+
+/*Nicolas Cage*/
+
+.cagebody div:nth-of-type(4) p:first-of-type {
+  margin-top: 4rem;
+}
+
+.cagebody div:nth-of-type(4) p:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.cagebody div:nth-of-type(4) p:nth-of-type(1n) {
+  background-color: magenta;
+}
+
+.cagebody div:nth-of-type(4) p:nth-of-type(2n) {
+  background-color: aqua;
+}
+
+.cageheropage h1 {
+  font-size: 7rem;
+  margin: 5rem 0 0 0;
+}
+
+.cageheropage h1,
+.cagesubheadline {
+  font-weight: bold;
+  text-align: center;
+}
+
+.cageintroimages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cageis {
+  background: center/cover url("../images/nicolascage/cage3.jpg");
+  overflow-x: hidden;
+  padding-bottom: 6rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.cageis:hover p {
+  margin-left: 500px;
+  transform: rotate(-20deg);
+}
+
+.cageis p {
+  border: 5px solid black;
+  border-radius: 25%;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow:
+    1px 1px 0 #444,
+    -1px -1px 0 #444,
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+    1px 1px 0 #444;
+  transition: margin-left 2s, transform 2s;
+  width: 25rem;
+}
+
+.cageis p:first-of-type {
+  background-color: yellow;
+}
+
+.cageis p:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+
+.cageis p:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+
+.cageis p:nth-of-type(3) {
+  transition-timing-function: (0, .46, 0.72, 2);
+}
+
+.cageis p:nth-of-type(4) {
+  transition-timing-function: cubic-bezier(0.95, .23, 0.74, 4);
+}
+
+.cageis p:nth-of-type(5) {
+  transition-timing-function: cubic-bezier(.5, .76, .9, 0);
+}
+
+.cageis p:nth-of-type(6) {
+  transition-timing-function: cubic-bezier(0.2, .75, 0.34, .93);
+}
+
+.cageis p:nth-of-type(7) {
+  transition-timing-function: cubic-bezier(0.4, .33, 1.5, .7);
+}
+
+.cageis p:nth-of-type(8) {
+  transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+.cageis p:nth-of-type(9) {
+  transition-timing-function: cubic-bezier(0.9, .2, 0.14, 3);
+}
+
+.cageis p:nth-of-type(10) {
+  transition-timing-function: cubic-bezier(0.3, .36, 0.34, 6);
+}
+
+.cageis p:nth-of-type(1n) {
+  background-color: yellow;
+}
+
+.cageis p:nth-of-type(2n) {
+  background-color: purple
+}
+
+.cageis p:nth-of-type(3n) {
+  background-color: red;
+}
+
+.cageis p:nth-of-type(4n) {
+  background-color: blue;
+}
+
+.cageis p:nth-of-type(5n) {
+  background-color: green;
+}
+
+.cagemovies {
+  background: center/cover url("../images/nicolascage/cage2.jpg");
+  overflow-x: hidden;
+}
+
+.cagemovies p {
+  border: 5px solid black;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  text-align: center;
+  transition-duration: 1.5s;
+  width: 26rem;
+}
+
+.cagemovies p:nth-of-type(1):hover {
+  transform: scale(0.5);
+}
+
+.cagemovies p:nth-of-type(2):hover {
+  transform: rotate(40deg);
+}
+
+.cagemovies p:nth-of-type(3):hover {
+  transform: rotate(-40deg);
+}
+
+.cagemovies p:nth-of-type(4):hover {
+  transform: translateX(200px);
+}
+
+.cagemovies p:nth-of-type(5):hover {
+  transform: translateX(50px);
+}
+
+.cagemovies p:nth-of-type(6):hover {
+  transform: translateY(30px);
+}
+
+.cagemovies p:nth-of-type(7):hover {
+  transform: skew(30deg);
+}
+
+.cagemovies p:nth-of-type(8):hover {
+  transform: rotate(-20deg) scale(1.3);
+}
+
+.cagemovies p:nth-of-type(9):hover {
+  transform: translateX(-500px) rotate(0.5turn) scaleY(1.5);
+}
+
+.cagemovies p:nth-of-type(10):hover {
+  transform: scale(0.7) translateX(500px);
+}
+
+.cageopeningimage {
+  border: 5px solid black;
+  margin-bottom: 1.5rem;
+  max-width: 30%;
+}
+
+.cagesubheadline {
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+}
+
+.cagetitle {
+  font-size: 6rem;
+  font-weight: bold;
+  transition-duration: 2s;
+}
+
+.cagetitle:hover {
+  font-size: 12rem;
+}
+
+@media (max-width: 1007px) {
+
+  .cageis {
+    align-items: center;
+  }
+
+  .cageis,
+  .cagemovies,
+  .cagetitle {
+    pointer-events: none;
+  }
+
+
+  .cagesubheadline {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .cageheropage h1 {
+    font-size: 4rem;
+  }
+
+  .cageis {
+    padding-left: 0;
+  }
+
+  .cageis p,
+  .cagemovies p {
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18rem;
+  }
+
+  .cagetitle {
+    pointer-events: none;
+    font-size: 4rem
+  }
+
+}
+
+/* TOP TEN WRITERS PAGE*/
+
+.brooks {
+  background: linear-gradient(#d1414f, #4184d1);
+}
+
+.ebert {
+  background: linear-gradient(#4d8f96, #7fb4ba);
+}
+
+.ellis {
+  background: linear-gradient(#cc8e58, #cca889);
+}
+
+.martin {
+  background: linear-gradient(#567d54, #86b384);
+}
+
+.morrison {
+  background: linear-gradient(#74628a, #c7ace6);
+}
+
+.stahl {
+  background: linear-gradient(#736e46, #cca46c);
+}
+
+.tarantino {
+  background: linear-gradient(#800a0a, #c74646);
+}
+
+.thompson {
+  background: linear-gradient(#9e9e2b, #c7c754);
+}
+
+.waters {
+  background: linear-gradient(#4e9478, #81b39f);
+}
+
+.writersheropage {
+  background: linear-gradient(black, grey);
+}
+
+.writersheropage h1 {
+  font-size: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.writersheropage img:hover,
+.writerslist img:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.writersheropage img,
+.writerslist img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .5;
+  padding-bottom: 3rem !important;
+  width: 80%;
+}
+
+.writersheropage p {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.writersheropage,
+.writerslist div {
+  color: white;
+  border-radius: 15%;
+  box-shadow: 5px 10px 20px black;
+  margin: 10rem auto;
+  width: 70%;
+}
+
+.writershr,
+.writerslist hr {
+  border: dotted grey;
+  border-bottom: none;
+  margin: 100px auto;
+  width: 5%;
+}
+
+.writerslist h3 {
+  font-size: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.writerslist p {
+  font-family: "helvetica";
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 70%;
+  padding-bottom: 3rem !important;
+  text-align: left;
+}
+
+.zahler {
+  background: linear-gradient(#6080a3, #8ea4bd);
+}
+
+@media (max-width: 1007px) {
+
+  .writersheropage h1 {
+    font-size: 4rem;
+  }
+
+  .writersheropage p {
+    font-size: 2.5rem;
+    padding: 2rem auto;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .writersheropage {
+    margin-top: 6rem;
+  }
+
+  .writersheropage div,
+  .writerslist div {
+    margin: 3rem auto;
+  }
+
+  .writersheropage h1 {
+    font-size: 3rem;
+  }
+
+  .writersheropage img,
+  .writerslist img {
+    opacity: 1;
+  }
+
+  .writersheropage p {
+    font-size: 1.75rem;
+  }
+
+  .writerslist h3 {
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    max-width: 80%;
+  }
+
+  .writerslist p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+
+}
+
+/*contact page*/
+
+.contact {
+  background: center/cover url(../images/bladerunnerpris.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "oswald";
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+
+.contactform {
+  margin: 10.5rem 4rem;
+}

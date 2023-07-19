@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Lynch Forms</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="lynchbody">
+    <nav id="nav">
+      <div class="nav-menu--wrap">
+        <ul class="nav-menu--ul">
+          <li class="nav-menu--ul-li">
+            <a href="index.html" class="nav-menu--label">Home</a>
+          </li>
+          <li class="nav-menu--ul-li">
+            <p class="nav-menu--label">Movies</p>
+            <ul class="dropdown--ul">
+              <li class="dropdown--ul-li"><a href="top10movies.html" target="_blank">Top Ten Movies</a></li>
+              <li class="dropdown--ul-li"><a href="bladerunner.html" target="_blank">Blade Runner</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu--ul-li">
+            <p class="nav-menu--label">Directors</p>
+            <ul class="dropdown--ul">
+              <li class="dropdown--ul-li"><a href="top20directors.html" target="_blank">Top Twenty Directors</a></li>
+              <li class="dropdown--ul-li"><a href="davidlynch.html" target="_blank">David Lynch</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu--ul-li">
+            <p class="nav-menu--label">Actors</p>
+            <ul class="dropdown--ul">
+              <li class="dropdown--ul-li"><a href="top20actors.html" target="_blank">Top Twenty Actors</a></li>
+              <li class="dropdown--ul-li"><a href="nicolascage.html" target="_blank">Nicolas Cage</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu--ul-li">
+            <a href="top10writers.html" class="nav-menu--label">Top Ten Writers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="lynchheroimage" role="img" aria-label="Eraserhead promotional image, Jack Nance staring open-mouthed">
+      <h1>David Lynch Forms</h1>
+      <p>Record the size of your Lynch fandom!</p>
+    </div>
+    <form class="lynchmainbody" action="mailto:mhen1001@mail.com" method="post" enctype="text/plain">
+      <p>
+        <label>First Name: <input class="lynchinfoheight" placeholder="First Name" type="text" name="First Name"
+            required></label>
+      </p>
+      <p>
+        <label>Last Name: <input class="lynchinfoheight" placeholder="Last Name" type="text" name="Last Name"
+            required></label>
+      </p>
+      <p>
+        <label>Email: <input class="lynchinfoheight" placeholder="Email" type="email" name="Email Address"
+            required></label>
+      </p>
+      <hr>
+      <label>Check this box if David Lynch is a great filmmaker: <input class="lynchcheckboxsize" type="checkbox"
+          name="David Lynch is great" checked required></label>
+      <hr>
+      <label> Enter a Number Between 1 and 100 to Measure How Familiar You Are With Lynch: <input
+          class="lynchnumbersize" type="number" name="Familiarity with Lynch score" min="1" max="100" step="1"
+          required></label>
+      <hr>
+      <p>
+        <label>Measure Your Love of David Lynch From 1 to 100: <input class="lynchmeasuresize" type="range"
+            name="Love of Lynch score" min="1" max="100" step="1" required></label>
+      </p>
+      <hr>
+      <p>Select Your Favoirte David Lynch Movie: </p>
+      <div>
+        <label><input value="Favorite Lynch Movie: Eraserhead" type="radio" name="movie">Eraserhead</label>
+      </div>
+      <div>
+        <label><input value="Favorite Lynch Movie: The Elephant Man" type="radio" name="movie">The Elephant Man</label>
+      </div>
+      <div>
+        <label><input value="Dune" type="radio" name="movie">Dune</label>
+      </div>
+      <div>
+        <label><input value="Blue Velvet" type="radio" name="movie">Blue Velvet</label>
+      </div>
+      <div>
+        <label><input value="Wild at Heart" type="radio" name="movie">Wild at Heart</label>
+      </div>
+      <div>
+        <label><input value="Twin Peaks: Fire Walk With Me" type="radio" name="movie">Twin Peaks: Fire Walk With
+          Me</label>
+      </div>
+      <div>
+        <label><input value="Lost Highway" type="radio" name="movie">Lost Highway</label>
+      </div>
+      <div>
+        <label><input value="The Straight Story" type="radio" name="movie">The Straight Story</label>
+      </div>
+      <div>
+        <label><input value="Mulholland Drive" type="radio" name="movie">Mulholland Drive</label>
+      </div>
+      <div>
+        <label><input value="Inland Empire" type="radio" name="movie">Inland Empire</label>
+      </div>
+      <hr>
+      <p>
+        <label>Select Your Favorite Lynch Series:<br> <select name="Favorite Lynch series"
+            class="lynchdropdownselector">
+            <option>--Choose a series--</option>
+            <option>Twin Peaks</option>
+            <option>On the Air</option>
+            <option>Hotel Room</option>
+            <option>Rabbits</option>
+            <option>Twin Peaks: The Return</option>
+          </select></label>
+      </p>
+      <hr>
+      <label>Enter the color you most associate with David Lynch: <input class="lynchcolorheight"
+          name="Lynch color association" type="color" required></label>
+      <hr>
+      <p>
+        <label>Personal Reasons You Love David Lynch: <br><textarea rows="10" cols="50" name="Reasons you love Lynch "
+            placeholder="Type Reasons Here" required></textarea></label>
+      </p>
+      <button class="lynchsubmit">Submit</button>
+    </form>
+
+    <div class="lynchsearch" role="img" aria-label="David Lynch giving a thumbs up">
+      <h2 class="lynchsearchheadline">Search for more David Lynch information below!</h2>
+      <h3>Search David Lynch on Reddit</h3>
+      <form action="https://www.reddit.com/search">
+        <input class="lynchsearchheight" type="text">
+        <button class="lynchsearchbutton">Search Reddit</button>
+      </form>
+      <h3>Search David Lynch on Google</h3>
+      <form action="https://www.google.com/search">
+        <input class="lynchsearchheight " type="text">
+        <button class="lynchsearchbutton">Search Google</button>
+      </form>
+      <h3>Search David Lynch on Youtube</h3>
+      <form action="https://www.youtube.com/results">
+        <input class="lynchsearchheight" type="text">
+        <button class="lynchsearchbutton">Search Youtube</button>
+      </form>
+    </div>
+    <footer class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/matt-hendricks-144800181/">LinkedIn</a>
+      <a class="footer-link" href="https://www.facebook.com/opm.holder.50/">Facebook</a>
+      <a class="footer-link" href="https://twitter.com/movies_other/">Twitter</a>
+      <a class="footer-link" href="https://otherpeoplesmovies.com">Film Critique Website</a>
+      <a class="footer-link" href="contact.html">CONTACT</a>
+      <a class="copyright" href="">© 2022 Matt Hendricks</a>
+    </footer>
+  </div>
+</body>
+
+</html>
